@@ -1,7 +1,7 @@
 # PORTFOLIO
 A personal portfilio to get idea about github commands
 
-git statu -> to check about the status of files
+git status -> to check about the status of files
 git add . -> to add all files in the current directory
 git commit -m "message" -> to commit the files with a message "This is done after adding the files"
 git push -> to push the files to the remote repository (means to me or other collaborators)
