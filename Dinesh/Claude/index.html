@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle-container">
+      <button
+        id="themeToggle"
+        class="theme-toggle"
+        aria-label="Toggle dark mode"
+      >
+        <div class="toggle-track">
+          <div class="toggle-sun"><i class="fas fa-sun"></i></div>
+          <div class="toggle-moon"><i class="fas fa-moon"></i></div>
+        </div>
+        <div class="toggle-thumb"></div>
+      </button>
+    </div>
+
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">Portfolio</div>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Home Section with Left Animation -->
+      <section id="home" class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <div class="intro-container">
+              <div class="intro-text">
+                <h1 class="animate-title">
+                  Hello, I'm <span class="highlight">Your Name</span>
+                </h1>
+                <p class="animate-subtitle">
+                  Frontend Developer & UI/UX Designer
+                </p>
+                <div class="animate-description">
+                  <p>
+                    I create beautiful, responsive websites with modern
+                    technologies and a focus on user experience.
+                  </p>
+                </div>
+                <div class="hero-buttons animate-buttons">
+                  <button class="btn btn-primary">Hire Me</button>
+                  <button class="btn btn-outline" id="downloadCV">
+                    Download CV
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="profile-container">
+              <div class="profile-picture-wrapper">
+                <img
+                  src="https://via.placeholder.com/400"
+                  alt="Your Name"
+                  class="profile-picture"
+                  id="profilePic"
+                />
+                <div class="profile-picture-overlay">
+                  <label for="upload-profile" class="upload-btn">
+                    <i class="fas fa-camera"></i>
+                  </label>
+                  <input
+                    type="file"
+                    id="upload-profile"
+                    accept="image/*"
+                    hidden
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                I am a passionate web developer with a strong foundation in
+                frontend technologies. My journey in web development started 5
+                years ago, and I've been constantly learning and improving ever
+                since.
+              </p>
+              <p>
+                I specialize in creating responsive, user-friendly websites that
+                deliver exceptional user experiences. My goal is to build
+                digital solutions that are not only visually appealing but also
+                functional and accessible.
+              </p>
+              <div class="about-buttons">
+                <button class="btn btn-secondary">My Work</button>
+                <button class="btn btn-outline">Contact Me</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section with Moving Div -->
+      <section id="skills" class="skills-section">
+        <div class="container">
+          <h2 class="section-title">My Skills</h2>
+          <div class="skills-slider-container">
+            <div class="skills-slider" id="skillsSlider">
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                <h3>HTML5</h3>
+                <div class="skill-level">
+                  <div class="skill-bar" style="width: 95%"></div>
+                </div>
+                <p>5 Years Experience</p>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                <h3>CSS3</h3>
+                <div class="skill-level">
+                  <div class="skill-bar" style="width: 90%"></div>
+                </div>
+                <p>5 Years Experience</p>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-js"></i></div>
+                <h3>JavaScript</h3>
+                <div class="skill-level">
+                  <div class="skill-bar" style="width: 85%"></div>
+                </div>
+                <p>4 Years Experience</p>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-react"></i></div>
+                <h3>React</h3>
+                <div class="skill-level">
+                  <div class="skill-bar" style="width: 80%"></div>
+                </div>
+                <p>3 Years Experience</p>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                <h3>Node.js</h3>
+                <div class="skill-level">
+                  <div class="skill-bar" style="width: 75%"></div>
+                </div>
+                <p>2 Years Experience</p>
+              </div>
+            </div>
+
+            <div class="slider-controls">
+              <button class="slider-arrow prev" id="prevSkill">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <div class="slider-timeline">
+                <div class="timeline-track">
+                  <div class="timeline-progress" id="timelineProgress"></div>
+                </div>
+                <div class="timeline-markers" id="timelineMarkers"></div>
+              </div>
+              <button class="slider-arrow next" id="nextSkill">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects-section">
+        <div class="container">
+          <h2 class="section-title">My Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="https://via.placeholder.com/600x400"
+                  alt="Project 1"
+                />
+              </div>
+              <div class="project-content">
+                <h3>E-commerce Website</h3>
+                <p>
+                  A fully responsive e-commerce website with cart functionality.
+                </p>
+                <div class="project-buttons">
+                  <button class="btn btn-primary btn-sm">View Project</button>
+                  <button class="btn btn-outline btn-sm">Source Code</button>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="https://via.placeholder.com/600x400"
+                  alt="Project 2"
+                />
+              </div>
+              <div class="project-content">
+                <h3>Portfolio Template</h3>
+                <p>A modern portfolio template for creative professionals.</p>
+                <div class="project-buttons">
+                  <button class="btn btn-primary btn-sm">View Project</button>
+                  <button class="btn btn-outline btn-sm">Source Code</button>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="https://via.placeholder.com/600x400"
+                  alt="Project 3"
+                />
+              </div>
+              <div class="project-content">
+                <h3>Task Management App</h3>
+                <p>
+                  A task management application built with React and Node.js.
+                </p>
+                <div class="project-buttons">
+                  <button class="btn btn-primary btn-sm">View Project</button>
+                  <button class="btn btn-outline btn-sm">Source Code</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <p>your-email@example.com</p>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <p>+1 (123) 456-7890</p>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>City, Country</p>
+              </div>
+              <div class="social-links">
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+            <form class="contact-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- CV Download Modal -->
+    <div class="modal" id="cvModal">
+      <div class="modal-content">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <h2>Preparing Your CV...</h2>
+        <div class="loader"></div>
+        <p>Your CV will download automatically in a moment.</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
