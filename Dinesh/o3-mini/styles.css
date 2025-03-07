@@ -1,0 +1,231 @@
+/* GENERAL STYLES */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme {
+  background-color: #2c2c2c;
+  color: #f4f4f4;
+}
+
+/* THEME TOGGLE BUTTON */
+.theme-toggle {
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 15px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+.toggle-slider {
+  width: 26px;
+  height: 26px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle.dark {
+  background-color: #555;
+}
+
+.theme-toggle.dark .toggle-slider {
+  transform: translateX(30px);
+}
+
+/* INTRODUCTION SECTION (Left Animation) */
+.intro-section {
+  padding: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 200px;
+}
+
+.intro-container {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideInFromLeft 1s forwards;
+  opacity: 0;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.intro-title {
+  margin: 0 0 10px;
+  font-size: 2em;
+}
+
+.intro-text {
+  margin: 0;
+  font-size: 1em;
+}
+
+/* PROFILE PICTURE SECTION */
+.profile-section {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.profile-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.profile-container:hover {
+  transform: scale(1.05);
+}
+
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* AESTHETIC BUTTONS */
+.aesthetic-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.aesthetic-button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.aesthetic-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* MOVING SKILLS DIV & TIMELINE */
+.skills-section {
+  margin: 40px 0;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.skills-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.skills-slider {
+  display: flex;
+  animation: slideSkills 20s linear infinite;
+}
+
+.skill {
+  flex: 0 0 auto;
+  background: #f0f0f0;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 1em;
+  white-space: nowrap;
+}
+
+@keyframes slideSkills {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.timeline {
+  height: 4px;
+  background-color: #4caf50;
+  margin-top: 10px;
+  width: 0;
+  animation: timelineProgress 20s linear infinite;
+}
+
+@keyframes timelineProgress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* DOWNLOAD CV BUTTON */
+.cv-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.download-button {
+  padding: 12px 24px;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.download-button:hover {
+  background-color: #1976d2;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.download-button.clicked {
+  animation: buttonPulse 0.5s ease-out;
+}
+
+@keyframes buttonPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
