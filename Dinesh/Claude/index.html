@@ -11,6 +11,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="icon" href="Image2.png" />
+    <meta
+      name="description"
+      content="Portfolio website of Dinesh YDK, Frontend Developer & UI/UX Designer"
+    />
   </head>
   <body>
     <!-- Theme Toggle Button -->
@@ -39,11 +43,14 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
+          <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+          </button>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main id="main">
       <!-- Home Section with Left Animation -->
       <section id="home" class="hero-section">
         <div class="container">
@@ -75,7 +82,7 @@
               <div class="profile-picture-wrapper">
                 <img
                   src="Image1.jpg"
-                  alt="Your Name"
+                  alt="Dinesh YDK"
                   class="profile-picture"
                   id="profilePic"
                 />
@@ -173,10 +180,23 @@
                 </div>
                 <p>2 Years Experience</p>
               </div>
+
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-figma"></i></div>
+                <h3>Figma</h3>
+                <div class="skill-level">
+                  <div class="skill-bar" style="width: 85%"></div>
+                </div>
+                <p>3 Years Experience</p>
+              </div>
             </div>
 
             <div class="slider-controls">
-              <button class="slider-arrow prev" id="prevSkill">
+              <button
+                class="slider-arrow prev"
+                id="prevSkill"
+                aria-label="Previous skill"
+              >
                 <i class="fas fa-chevron-left"></i>
               </button>
               <div class="slider-timeline">
@@ -185,7 +205,11 @@
                 </div>
                 <div class="timeline-markers" id="timelineMarkers"></div>
               </div>
-              <button class="slider-arrow next" id="nextSkill">
+              <button
+                class="slider-arrow next"
+                id="nextSkill"
+                aria-label="Next skill"
+              >
                 <i class="fas fa-chevron-right"></i>
               </button>
             </div>
@@ -202,7 +226,8 @@
               <div class="project-image">
                 <img
                   src="https://via.placeholder.com/600x400"
-                  alt="Project 1"
+                  alt="E-commerce Website Project"
+                  loading="lazy"
                 />
               </div>
               <div class="project-content">
@@ -220,7 +245,8 @@
               <div class="project-image">
                 <img
                   src="https://via.placeholder.com/600x400"
-                  alt="Project 2"
+                  alt="Portfolio Template Project"
+                  loading="lazy"
                 />
               </div>
               <div class="project-content">
@@ -236,7 +262,8 @@
               <div class="project-image">
                 <img
                   src="https://via.placeholder.com/600x400"
-                  alt="Project 3"
+                  alt="Task Management App Project"
+                  loading="lazy"
                 />
               </div>
               <div class="project-content">
@@ -273,20 +300,22 @@
                 <p>IIT ISM Dhanbad, Jharkhand</p>
               </div>
               <div class="social-links">
-                <a href="#" class="social-icon"
-                  ><i class="fab fa-github"></i
-                ></a>
+                <a href="#" class="social-icon" aria-label="GitHub Profile">
+                  <i class="fab fa-github"></i>
+                </a>
                 <a
                   href="https://www.linkedin.com/in/dineshydk/"
                   class="social-icon"
-                  ><i class="fab fa-linkedin"></i
-                ></a>
-                <a href="#" class="social-icon"
-                  ><i class="fab fa-twitter"></i
-                ></a>
+                  aria-label="LinkedIn Profile"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="Twitter Profile">
+                  <i class="fab fa-twitter"></i>
+                </a>
               </div>
             </div>
-            <form class="contact-form">
+            <form class="contact-form" id="contactForm">
               <div class="form-group">
                 <input
                   type="text"
@@ -333,7 +362,7 @@
 
     <footer>
       <div class="container">
-        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+        <p>&copy; 2025 Dinesh YDK. All Rights Reserved.</p>
       </div>
     </footer>
 
@@ -347,6 +376,7 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script src="jsDummy.js"></script>
   </body>
 </html>

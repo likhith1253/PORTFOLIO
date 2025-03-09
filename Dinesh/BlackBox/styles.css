@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-theme {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.intro {
+  position: relative;
+  left: -100px;
+  opacity: 0;
+  animation: slideIn 1s forwards;
+  margin-bottom: 20px;
+}
+
+@keyframes slideIn {
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.highlight {
+  color: #6200ea;
+  font-weight: bold;
+}
+
+.profile-picture {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  transition: transform 0.3s;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.profile-picture img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  /*Here are some other cursor values you can use:*/
+  /* cursor: crosshair; */
+  /* cursor: text; */
+  /* cursor: wait; */
+  /* cursor: help; */
+  /* cursor: move; */
+  /* cursor: url('path-to-your-custom-cursor.png'), auto; */
+  /* cursor: grab; */
+  /* cursor: grabbing; */
+  /* cursor: not-allowed; */
+}
+
+.buttons {
+  margin-bottom: 20px;
+}
+
+.aesthetic-button,
+.theme-toggle,
+.download-button {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.aesthetic-button:hover,
+.theme-toggle:hover,
+.download-button:hover {
+  background-color: #3700b3;
+  transform: scale(1.05);
+}
+
+.theme-toggle {
+  border-radius: 50px;
+}
+
+.skills {
+  position: relative;
+  animation: moveSkills 5s linear infinite;
+  margin-bottom: 20px;
+}
+
+.skill-item {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  background-color: #e0e0e0;
+}
+
+@keyframes moveSkills {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

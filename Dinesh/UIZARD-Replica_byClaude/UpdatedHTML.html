@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortfolioX - Modern Portfolio Showcase</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body class="theme-default">
+    <div class="theme-toggle">
+      <button id="theme-button"><i class="fas fa-palette"></i></button>
+      <div class="theme-options">
+        <div class="theme-option" data-theme="theme-default">Default</div>
+        <div class="theme-option" data-theme="theme-dark">Dark</div>
+        <div class="theme-option" data-theme="theme-ocean">Ocean</div>
+        <div class="theme-option" data-theme="theme-sunset">Sunset</div>
+        <div class="theme-option" data-theme="theme-forest">Forest</div>
+      </div>
+    </div>
+
+    <header>
+      <nav class="main-nav">
+        <div class="logo">PortfolioX</div>
+        <div class="nav-links">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <a href="#themes" class="nav-link">Themes</a>
+        </div>
+        <div class="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <a href="#themes" class="mobile-link">Themes</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero animate-section">
+        <div class="hero-content">
+          <h1 class="animate-item">Craft Your Digital Identity</h1>
+          <p class="animate-item">
+            Welcome to PortfolioX, where creativity meets technology. We
+            transform your ideas into captivating digital experiences with
+            modern design principles and interactive elements.
+          </p>
+
+          <div class="mode-buttons animate-item">
+            <button class="btn btn-primary" data-action="explore">
+              Explore Work
+            </button>
+            <button class="btn btn-outline" data-action="contact">
+              Get in Touch
+            </button>
+          </div>
+        </div>
+        <div class="hero-image animate-item">
+          <img
+            src="/api/placeholder/300/300"
+            alt="Interactive portfolio features"
+            class="feature-image"
+          />
+          <div class="feature-labels">
+            <span class="feature-label">Projects</span>
+            <span class="feature-label">Animations</span>
+            <span class="feature-label">Customization</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Possibilities Section -->
+      <section class="possibilities animate-section">
+        <h2 class="section-title animate-item">
+          Transform Your Vision With PortfolioX
+        </h2>
+        <div class="laptop-preview animate-item">
+          <img
+            src="/api/placeholder/500/300"
+            alt="Laptop showing portfolio"
+            class="laptop-image"
+          />
+          <div class="engage-badge pulse-animation">Engage</div>
+        </div>
+        <div class="stats-container animate-item">
+          <div class="stat-item">
+            <div class="stat-number counter" data-target="150">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number counter" data-target="98">0</div>
+            <div class="stat-label">Satisfied Clients</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number counter" data-target="12">0</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features animate-section">
+        <h2 class="section-title animate-item">Our Creative Approach</h2>
+        <div class="view-all animate-item">View All</div>
+
+        <div class="feature-grid">
+          <div class="feature-item animate-item">
+            <div class="feature-icon"><i class="fas fa-user"></i></div>
+            <div class="feature-content">
+              <span class="feature-number">01</span>
+              <span class="feature-title">Profile Design</span>
+              <p class="feature-desc">
+                Crafting unique digital identities that stand out.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item animate-item">
+            <div class="feature-icon"><i class="fas fa-palette"></i></div>
+            <div class="feature-content">
+              <span class="feature-number">02</span>
+              <span class="feature-title">Customization</span>
+              <p class="feature-desc">
+                Tailored solutions for your specific needs and vision.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item animate-item">
+            <div class="feature-icon"><i class="fas fa-info-circle"></i></div>
+            <div class="feature-content">
+              <span class="feature-number">03</span>
+              <span class="feature-title">About Section</span>
+              <p class="feature-desc">
+                Telling your story in a compelling and authentic way.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item animate-item">
+            <div class="feature-icon"><i class="fas fa-envelope"></i></div>
+            <div class="feature-content">
+              <span class="feature-number">04</span>
+              <span class="feature-title">Contact Integration</span>
+              <p class="feature-desc">
+                Seamless communication channels for your audience.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item animate-item">
+            <div class="feature-icon">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <div class="feature-content">
+              <span class="feature-number">05</span>
+              <span class="feature-title">Project Showcase</span>
+              <p class="feature-desc">
+                Highlighting your work with beautiful layouts.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item animate-item">
+            <div class="feature-icon"><i class="fas fa-magic"></i></div>
+            <div class="feature-content">
+              <span class="feature-number">06</span>
+              <span class="feature-title">Animations</span>
+              <p class="feature-desc">
+                Bringing your portfolio to life with smooth effects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Customization Section -->
+      <section class="customization animate-section" id="customization">
+        <h2 class="section-title animate-item">Featured Projects</h2>
+
+        <div class="tab-buttons animate-item">
+          <button class="tab-button active" data-filter="all">All</button>
+          <button class="tab-button" data-filter="profile">Profile</button>
+          <button class="tab-button" data-filter="design">Design</button>
+          <button class="tab-button" data-filter="development">
+            Development
+          </button>
+          <button class="tab-button" data-filter="branding">Branding</button>
+        </div>
+
+        <div class="card-grid">
+          <div class="card animate-item" data-category="profile">
+            <div class="card-image-container">
+              <img
+                src="/api/placeholder/300/200"
+                alt="User Profile"
+                class="card-image"
+              />
+              <div class="card-overlay">
+                <div class="card-overlay-content">
+                  <i class="fas fa-eye"></i>
+                  <span>View Project</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Personal Branding</h3>
+              <p class="card-category">Profile</p>
+              <button class="btn btn-primary card-button">Explore</button>
+            </div>
+          </div>
+
+          <div class="card animate-item" data-category="design">
+            <div class="card-image-container">
+              <img
+                src="/api/placeholder/300/200"
+                alt="Customization Options"
+                class="card-image"
+              />
+              <div class="card-overlay">
+                <div class="card-overlay-content">
+                  <i class="fas fa-eye"></i>
+                  <span>View Project</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Modern UI Collection</h3>
+              <p class="card-category">Design</p>
+              <button class="btn btn-primary card-button">Discover</button>
+            </div>
+          </div>
+
+          <div class="card animate-item" data-category="development">
+            <div class="card-image-container">
+              <img
+                src="/api/placeholder/300/200"
+                alt="About PortfolioX"
+                class="card-image"
+              />
+              <div class="card-overlay">
+                <div class="card-overlay-content">
+                  <i class="fas fa-eye"></i>
+                  <span>View Project</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>E-Commerce Platform</h3>
+              <p class="card-category">Development</p>
+              <button class="btn btn-primary card-button">Learn More</button>
+            </div>
+          </div>
+
+          <div class="card animate-item" data-category="branding">
+            <div class="card-image-container">
+              <img
+                src="/api/placeholder/300/200"
+                alt="Contact Us"
+                class="card-image"
+              />
+              <div class="card-overlay">
+                <div class="card-overlay-content">
+                  <i class="fas fa-eye"></i>
+                  <span>View Project</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Brand Identity System</h3>
+              <p class="card-category">Branding</p>
+              <button class="btn btn-primary card-button">Reach Out</button>
+            </div>
+          </div>
+
+          <div class="card animate-item" data-category="design">
+            <div class="card-image-container">
+              <img
+                src="/api/placeholder/300/200"
+                alt="Smooth Transitions"
+                class="card-image"
+              />
+              <div class="card-overlay">
+                <div class="card-overlay-content">
+                  <i class="fas fa-eye"></i>
+                  <span>View Project</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Motion Graphics Portfolio</h3>
+              <p class="card-category">Design</p>
+              <button class="btn btn-primary card-button">Experience</button>
+            </div>
+          </div>
+
+          <div class="card animate-item" data-category="development">
+            <div class="card-image-container">
+              <img
+                src="/api/placeholder/300/200"
+                alt="Web App"
+                class="card-image"
+              />
+              <div class="card-overlay">
+                <div class="card-overlay-content">
+                  <i class="fas fa-eye"></i>
+                  <span>View Project</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Progressive Web App</h3>
+              <p class="card-category">Development</p>
+              <button class="btn btn-primary card-button">View Demo</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="view-all-projects animate-item">View All Projects</div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="testimonials animate-section">
+        <h2 class="section-title animate-item">Client Stories</h2>
+
+        <div class="testimonials-container animate-item">
+          <div class="testimonial">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <div class="testimonial-content">
+              <img
+                src="/api/placeholder/50/50"
+                alt="Client"
+                class="testimonial-image"
+              />
+              <div class="testimonial-info">
+                <p class="testimonial-text">
+                  "The animations created for my portfolio completely
+                  transformed the user experience. PortfolioX understood exactly
+                  what I needed."
+                </p>
+                <h4>Sarah Johnson</h4>
+                <p>Creative Director</p>
+                <div class="testimonial-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <div class="testimonial-content">
+              <img
+                src="/api/placeholder/50/50"
+                alt="Client"
+                class="testimonial-image"
+              />
+              <div class="testimonial-info">
+                <p class="testimonial-text">
+                  "Working with PortfolioX was effortless. They took my vision
+                  and elevated it beyond what I imagined possible for my brand."
+                </p>
+                <h4>Michael Chen</h4>
+                <p>Entrepreneur</p>
+                <div class="testimonial-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <div class="testimonial-content">
+              <img
+                src="/api/placeholder/50/50"
+                alt="Client"
+                class="testimonial-image"
+              />
+              <div class="testimonial-info">
+                <p class="testimonial-text">
+                  "The customization options were exactly what I needed. My
+                  portfolio now perfectly represents my professional identity."
+                </p>
+                <h4>Jessica Rivera</h4>
+                <p>UX Designer</p>
+                <div class="testimonial-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-primary explore-button animate-item">
+          View All Reviews
+        </button>
+      </section>
+
+      <!-- Profile Page -->
+      <section id="profile" class="profile-page hidden animate-section">
+        <div class="profile-header">
+          <h2>PortfolioX Showcase</h2>
+          <div class="nav-tabs">
+            <a href="#home" class="tab-link active">Home</a>
+            <a href="#portfolio" class="tab-link">Portfolio</a>
+            <a href="#about" class="tab-link">About</a>
+            <a href="#contact-me" class="tab-link">Contact Me</a>
+            <a href="#customization-themes" class="tab-link">Themes</a>
+          </div>
+        </div>
+
+        <div class="profile-content">
+          <h2 class="section-title">Creative Works</h2>
+          <div class="portfolio-reviews">
+            <div class="portfolio-header">
+              <h3>Portfolio Reviews</h3>
+              <div class="sorting-options">
+                <span>Sorting Filter:</span>
+                <div class="dropdown">
+                  <button class="dropdown-toggle">
+                    Recent Reviews <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-item">Recent Reviews</div>
+                    <div class="dropdown-item">Highest Rated</div>
+                    <div class="dropdown-item">Most Popular</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviews-container">
+              <div class="review-card">
+                <div class="review-header">
+                  <h4>Featured Project: Interactive Experience</h4>
+                  <div class="rating">★★★★★</div>
+                </div>
+                <div class="review-meta">
+                  <span><i class="fas fa-calendar"></i> March 2025</span>
+                  <span><i class="fas fa-user"></i> James Wilson</span>
+                </div>
+                <p class="review-tag">Engaging and innovative design</p>
+                <p class="review-text">
+                  PortfolioX creates incredible projects showcasing innovative
+                  design solutions that engage users from the first interaction.
+                </p>
+                <div class="review-actions">
+                  <button class="btn btn-outline btn-sm">Read More</button>
+                  <div class="review-likes">
+                    <i class="fas fa-heart"></i> 48
+                  </div>
+                </div>
+              </div>
+
+              <div class="review-card">
+                <div class="review-header">
+                  <h4>Animation Awards</h4>
+                  <div class="rating">★★★★★</div>
+                </div>
+                <div class="review-meta">
+                  <span><i class="fas fa-calendar"></i> February 2025</span>
+                  <span><i class="fas fa-user"></i> Laura Taylor</span>
+                </div>
+                <p class="review-tag">Interactive design, engaging elements</p>
+                <p class="review-text">
+                  "Sleek website with smooth effects. The transitions maintain
+                  focus and create a cohesive user journey."
+                </p>
+                <div class="review-actions">
+                  <button class="btn btn-outline btn-sm">Read More</button>
+                  <div class="review-likes">
+                    <i class="fas fa-heart"></i> 32
+                  </div>
+                </div>
+              </div>
+
+              <div class="review-card">
+                <div class="review-header">
+                  <h4>PortfolioX Showcase</h4>
+                  <div class="rating">★★★★★</div>
+                </div>
+                <div class="review-meta">
+                  <span><i class="fas fa-calendar"></i> January 2025</span>
+                  <span><i class="fas fa-user"></i> Daniel Rodriguez</span>
+                </div>
+                <p class="review-tag">Impressive visual effects</p>
+                <p class="review-text">
+                  "This site is a gamechanger! The animations are exquisite,
+                  especially the transitions between sections!"
+                </p>
+                <div class="review-actions">
+                  <button class="btn btn-outline btn-sm">Read More</button>
+                  <div class="review-likes">
+                    <i class="fas fa-heart"></i> 41
+                  </div>
+                </div>
+              </div>
+
+              <div class="review-card">
+                <div class="review-header">
+                  <h4>Smooth Scroll Implementation</h4>
+                  <div class="rating">★★★★★</div>
+                </div>
+                <div class="review-meta">
+                  <span><i class="fas fa-calendar"></i> December 2024</span>
+                  <span><i class="fas fa-user"></i> Emily Chen</span>
+                </div>
+                <p class="review-tag">Revolutionary scrolling experience</p>
+                <p class="review-text">
+                  "Amazing scrolling effect. The navigation feels intuitive and
+                  the content reveals are perfectly timed!"
+                </p>
+                <div class="review-actions">
+                  <button class="btn btn-outline btn-sm">Read More</button>
+                  <div class="review-likes">
+                    <i class="fas fa-heart"></i> 37
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Page -->
+      <section id="projects-page" class="projects-page hidden animate-section">
+        <div class="projects-header">
+          <div class="logo">PortfolioX</div>
+          <div class="nav-links-small">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#projects" class="nav-link active">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </div>
+        </div>
+
+        <div class="projects-container">
+          <h2 class="section-title">Our Portfolio</h2>
+          <div class="project-filters">
+            <button class="project-filter active" data-filter="all">All</button>
+            <button class="project-filter" data-filter="web">Web Design</button>
+            <button class="project-filter" data-filter="app">
+              App Development
+            </button>
+            <button class="project-filter" data-filter="branding">
+              Branding
+            </button>
+          </div>
+
+          <div class="projects-grid">
+            <div class="project-card" data-category="web">
+              <div class="project-image-container">
+                <img
+                  src="/api/placeholder/300/200"
+                  alt="Modern Architecture"
+                  class="project-image"
+                />
+                <div class="project-overlay">
+                  <div class="project-overlay-content">
+                    <button class="btn btn-sm btn-light">View Project</button>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-category">Web Design</div>
+                <h3>Modern Architecture Firm</h3>
+                <p>
+                  A minimalist approach to showcasing architectural excellence
+                  and innovation.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-category="app">
+              <div class="project-image-container">
+                <img
+                  src="/api/placeholder/300/200"
+                  alt="Mobile App"
+                  class="project-image"
+                />
+                <div class="project-overlay">
+                  <div class="project-overlay-content">
+                    <button class="btn btn-sm btn-light">View Project</button>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-category">App Development</div>
+                <h3>Lifestyle Tracking App</h3>
+                <p>
+                  Intuitive mobile application for monitoring daily habits and
+                  wellness metrics.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">React Native</span>
+                  <span class="tech-tag">Firebase</span>
+                  <span class="tech-tag">Redux</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-category="branding">
+              <div class="project-image-container">
+                <img
+                  src="/api/placeholder/300/200"
+                  alt="Brand Identity"
+                  class="project-image"
+                />
+                <div class="project-overlay">
+                  <div class="project-overlay-content">
+                    <button class="btn btn-sm btn-light">View Project</button>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-category">Branding</div>
+                <h3>Tech Startup Rebrand</h3>
+                <p>
+                  Complete visual identity overhaul for an emerging technology
+                  company.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Branding</span>
+                  <span class="tech-tag">Logo Design</span>
+                  <span class="tech-tag">Style Guide</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+              <div class="project-image-container">
+                <img
+                  src="/api/placeholder/300/200"
+                  alt="E-commerce Platform"
+                  class="project-image"
+                />
+                <div class="project-overlay">
+                  <div class="project-overlay-content">
+                    <button class="btn btn-sm btn-light">View Project</button>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-category">Web Design</div>
+                <h3>Premium E-commerce Platform</h3>
+                <p>
+                  High-converting online store with seamless user experience and
+                  payment integration.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-category="app">
+              <div class="project-image-container">
+                <img
+                  src="/api/placeholder/300/200"
+                  alt="Social Media App"
+                  class="project-image"
+                />
+                <div class="project-overlay">
+                  <div class="project-overlay-content">
+                    <button class="btn btn-sm btn-light">View Project</button>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-category">App Development</div>
+                <h3>Creative Community Platform</h3>
+                <p>
+                  Social network app connecting artists and creators from around
+                  the world.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Flutter</span>
+                  <span class="tech-tag">Dart</span>
+                  <span class="tech-tag">AWS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-category="branding">
+              <div class="project-image-container">
+                <img
+                  src="/api/placeholder/300/200"
+                  alt="Restaurant Branding"
+                  class="project-image"
+                />
+                <div class="project-overlay">
+                  <div class="project-overlay-content">
+                    <button class="btn btn-sm btn-light">View Project</button>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-category">Branding</div>
+                <h3>Artisanal Restaurant Identity</h3>
+                <p>
+                  Comprehensive branding package for a farm-to-table dining
+                  experience.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Print Design</span>
+                  <span class="tech-tag">Typography</span>
+                  <span class="tech-tag">Packaging</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="projects-footer">
+          <div class="footer-info">
+            <p>About PortfolioX</p>
+            <p>
+              Professional portfolio showcase platform with customizable design
+              options for creative professionals.
+            </p>
+          </div>
+          <div class="footer-nav">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#profile">Profile</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="contact-info">
+            <h4>Contact Us</h4>
+            <p><i class="fas fa-phone"></i> +123-456-7890</p>
+            <p><i class="fas fa-envelope"></i> hello@portfoliox.com</p>
+            <div class="social-links">
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-dribbble"></i
+              ></a>
+            </div>
+          </div>
+        </footer>
+      </section>
+
+      <!-- Contact Page -->
+      <section id="contact-page" class="contact-page hidden animate-section">
+        <div class="contact-header">
+          <div class="logo">PortfolioX</div>
+          <div class="nav-links-small">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link active">Contact</a>
+          </div>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-form-container">
+            <h3>Let's Create Something Amazing</h3>
+            <p class="contact-intro">
+              Have a project in mind? We'd love to hear about it. Fill out the
+              form below to get started.
+            </p>
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="form-group"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
