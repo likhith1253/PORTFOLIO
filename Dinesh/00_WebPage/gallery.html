@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Frame & Album Co.</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Frame & Album Co.</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#works" class="nav-link">Works</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Gallery Header -->
+    <div class="gallery-header">
+        <div class="container">
+            <h1 data-aos="fade-up">Our Gallery</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Explore our collections and find the perfect piece for your memories</p>
+        </div>
+    </div>
+
+    <!-- Gallery Filters -->
+    <div class="gallery-filters">
+        <div class="container">
+            <div class="filter-buttons" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="albums">Albums</button>
+                <button class="filter-btn" data-filter="frames">Frames</button>
+                <button class="filter-btn" data-filter="wedding">Wedding</button>
+                <button class="filter-btn" data-filter="family">Family</button>
+                <button class="filter-btn" data-filter="special">Special Occasions</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid">
+        <div class="container">
+            <div class="masonry-grid" id="gallery">
+                <!-- Album Items -->
+                <div class="gallery-item albums wedding" data-aos="fade-up">
+                    <img src="https://via.placeholder.com/600x800" alt="Wedding Album">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Classic Wedding Album</h3>
+                            <p>Handcrafted leather with gold embossing</p>
+                            <span class="price">$199.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item albums family" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://via.placeholder.com/600x400" alt="Family Album">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Family Legacy Album</h3>
+                            <p>Archival quality pages with customizable cover</p>
+                            <span class="price">$159.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item albums special" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://via.placeholder.com/600x600" alt="Anniversary Album">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Anniversary Collection</h3>
+                            <p>Premium linen with silver detailing</p>
+                            <span class="price">$145.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item albums wedding" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://via.placeholder.com/600x700" alt="Engagement Album">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Engagement Stories</h3>
+                            <p>Modern design with custom typography</p>
+                            <span class="price">$129.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frame Items -->
+                <div class="gallery-item frames" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://via.placeholder.com/600x500" alt="Vintage Frame">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Vintage Elegance Frame</h3>
+                            <p>Hand-carved wood with aged finish</p>
+                            <span class="price">$85.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item frames special" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://via.placeholder.com/600x600" alt="Golden Frame">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Golden Accents Frame</h3>
+                            <p>Luxurious design with metallic finish</p>
+                            <span class="price">$110.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item frames family" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://via.placeholder.com/600x800" alt="Family Frame Set">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Family Multi-Frame</h3>
+                            <p>Set of 5 coordinated frames</p>
+                            <span class="price">$195.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item frames" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://via.placeholder.com/600x450" alt="Minimalist Frame">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Modern Minimalist Frame</h3>
+                            <p>Clean lines with matte finish</p>
+                            <span class="price">$65.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Items -->
+                <div class="gallery-item albums special" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://via.placeholder.com/600x550" alt="Baby Album">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Baby's First Year</h3>
+                            <p>Gentle colors with space for milestones</p>
+                            <span class="price">$135.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item frames wedding" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://via.placeholder.com/600x600" alt="Wedding Frame">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Wedding Memories Frame</h3>
+                            <p>Pearl-inlaid with custom engraving</p>
+                            <span class="price">$125.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item albums family" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://via.placeholder.com/600x700" alt="Heritage Album">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Heritage Collection</h3>
+                            <p>Designed for preserving family history</p>
+                            <span class="price">$180.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item frames special" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://via.placeholder.com/600x500" alt="Travel Frame">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Travel Memories Frame</h3>
+                            <p>Includes space for location and date</p>
+                            <span class="price">$75.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="gallery-cta">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Can't find what you're looking for?</h2>
+                <p>We offer custom designs tailored to your specific needs.</p>
+                <a href="index.html#contact" class="btn">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Frame & Album Co.</h2>
+                    <p>Framing Your Memories, Forever</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#works">Works</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive updates on new collections and special offers.</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Frame & Album Co. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#" class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
