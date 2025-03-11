@@ -1,0 +1,159 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --text-color: #333;
+    --background-color: #fff;
+    --animation-speed: 0.3s;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    transition: background-color var(--animation-speed), color var(--animation-speed);
+    margin: 0;
+    padding: 0;
+}
+
+.dark-theme {
+    --text-color: #f4f4f4;
+    --background-color: #333;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+#theme-toggle {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform var(--animation-speed);
+}
+
+#theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.animate-left {
+    animation: slideInLeft 1s ease-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.highlight {
+    color: var(--primary-color);
+}
+
+.cta-button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color var(--animation-speed);
+}
+
+.cta-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.profile-picture {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform var(--animation-speed);
+}
+
+#profile-img:hover {
+    transform: scale(1.1);
+}
+
+.skills-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 1rem 0;
+}
+
+.skill {
+    flex: 0 0 auto;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    border-radius: 20px;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transform: translateY(-50%);
+}
+
+.timeline-point {
+    background-color: var(--background-color);
+    padding: 0.5rem;
+    font-weight: bold;
+    position: relative;
+}
+
+#cv {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+}
